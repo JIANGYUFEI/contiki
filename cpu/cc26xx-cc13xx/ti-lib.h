@@ -244,6 +244,33 @@
 #define ti_lib_i2c_slave_int_enable(...)      I2CSlaveIntEnable(__VA_ARGS__)
 #define ti_lib_i2c_slave_int_status(...)      I2CSlaveIntStatus(__VA_ARGS__)
 #define ti_lib_i2c_slave_status(...)          I2CSlaveStatus(__VA_ARGS__)
+
+
+/*---------------------------------------------------------------------------*/
+/* i2s.h */
+#include "driverlib/i2s.h"
+#define ti_lib_i2s_enable(...)										I2SEnable(__VA_ARGS__)
+#define ti_lib_i2s_disable(...)										I2SDisable(__VA_ARGS__)
+#define ti_lib_i2s_audio_format_configure(...)		I2SAudioFormatConfigure(__VA_ARGS__)
+#define ti_lib_i2s_channel_configure(...)					I2SChannelConfigure(__VA_ARGS__)
+#define ti_lib_i2s_clock_configure(...)						I2SClockConfigure(__VA_ARGS__)
+#define ti_lib_i2s_buffer_config(...)							I2SBufferConfig(__VA_ARGS__)
+#define ti_lib_i2s_pointer_update(...)						I2SPointerUpdate(__VA_ARGS__)
+#define ti_lib_i2s_point_set(...)									I2SPointerSet(__VA_ARGS__)
+#define ti_lib_i2s_int_resister(...)							I2SIntRegister(__VA_ARGS__)
+#define ti_lib_i2s_int_unregister(...)						I2SIntUnregister(__VA_ARGS__)
+#define ti_lib_i2s_int_enable(...)								I2SIntEnable(__VA_ARGS__)
+#define ti_lib_i2s_int_disable(...)								I2SIntDisable(__VA_ARGS__)
+#define ti_lib_i2s_int_status(...)								I2SIntStatus(__VA_ARGS__)
+#define ti_lib_i2s_int_clear(...)									I2SIntClear(__VA_ARGS__)
+#define ti_lib_i2s_sample_stamp_enable(...)				I2SSampleStampEnable(__VA_ARGS__)
+#define ti_lib_i2s_sample_stamp_disable(...)			I2SSampleStampDisable(__VA_ARGS__)
+#define ti_lib_i2s_sample_stamp_config(...)				I2SSampleStampConfigure(__VA_ARGS__)
+#define ti_lib_i2s_sample_stamp_get(...)					I2SSampleStampGet(__VA_ARGS__)
+
+
+
+
 /*---------------------------------------------------------------------------*/
 /* interrupt.h */
 #include "driverlib/interrupt.h"
